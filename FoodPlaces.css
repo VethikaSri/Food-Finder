@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active{
+    color: darkslategray;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body, html{
+    overflow-x: hidden;
+}
+.navbar{
+    position: absolute;
+    display:flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: darkslategray;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    margin: 0 30px;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('CafeBG.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    text-align: center;
+    color: whitesmoke;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 200px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Deals and Offers*/
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:chocolate;
+}
+.row{
+    display:flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row img{
+    width: 500px;
+    height: auto;
+    padding-right: 30px;
+    object-fit: cover;
+}
+.Deals .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: chocolate;
+    margin: 20px auto;
+}
+p{
+    color:rgb(220, 139, 32);
+    padding: 0px 40px;
+    font-size: large;
+}
+.Deals .ctn{
+    margin-top: 30px;
+}
+
+.Cafes{
+    width: 100%;
+    height: 100vh;
+    background-image: url('Cafe.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.CafeContent
+{
+    width: 60%; 
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+.CafeContent h1{
+    font-size: 7vmin;
+}
+.CafeContent line{
+    margin-bottom: 50px;
+}
+.CafeContent p{
+    font-weight: bold;
+    color: whitesmoke;
+}
+.CafeContent .ctn{
+    margin-top: 40px;
+}
+.Restaurants{
+    width: 100%;
+    height: 100vh;
+    background-image: url('Rest.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.RestContent
+{
+    width: 60%; 
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.RestContent h1{
+    font-size: 7vmin;
+}
+.RestContent line{
+    margin-bottom: 50px;
+}
+.RestContent p{
+    font-weight: bold;
+    color: whitesmoke;
+}
+.RestContent .ctn{
+    margin-top: 40px;
+}
+.footer{
+    width:100%;
+    min-height:100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+    font-size: medium;
+}
+
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position:absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: whitesmoke;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-link li{
+        margin: 30px auto;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 400px;
+        height: auto;
+    }
+    .CafeContent{
+        width: 100%;
+    }
+    .RestContent{
+        width: 100%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #00000056;
+}
+li:hover{
+    color: #fc036b;
+    cursor: zoom-out;
+}

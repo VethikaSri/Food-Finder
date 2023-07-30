@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Food Finder</title>
+        <link rel="stylesheet" href="FoodPlaces.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1 class="logo">FOOD FINDER</h1>
+            <ul class="nav-link">
+                <li><a href="#"></a><b>Home</b></li>
+                <li><a href="#"></a><b>Cafes</b></li>
+                <li><a href="#"></a><b>Restaurants</b></li>
+                <li><a href="#"></a><b>Who We Are</b></li>
+                <li class="ctn"><a href="#"></a><b>Contact Us</b></li>
+            </ul>
+            <img src="Menu Icon.png" alt="" class="menu-btn">
+        </nav>
+        <header>
+            <div class="header-content">
+                <h2>Your Guide To Great Eats </h2>
+                <div class="line"></div>
+                <h1>SEARCH. EAT. REPEAT</h1>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </header>
+
+        <!--Deals and Offers-->
+
+        <section class="Deals">
+            <div class="title">
+                <h1>UPCOMING DEALS AND OFFERS</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="IPLOffer2.jpg" alt="">
+                    <h4> IPL Deals</h4>
+                    <p>Score big with our delicious IPL food deals!</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col">
+                    <img src="MovieOffer.jpg" alt="">
+                    <h4> Movie Deals</h4>
+                    <p>Get your snacks and save big with 30% off!</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="Cafes">
+            <div class="CafeContent">
+                <h1>SIP SAVOR ENJOY</h1>
+                <div class="line"></div>
+                <p>Coffee and Friends make the perfect blend</p>
+                <a href="#" class="ctn">Explore Cafes</a>
+            </div>
+        </section>
+
+        <section class="Restaurants">
+            <div class="RestContent">
+                    <h1>SAVOR THE FLAVOUR</h1>
+                    <div class="line"></div>
+                    <p>A restaurant is a canvas where the chef creates art, with every dish a masterpiece straight from the heart</p>
+                    <a href="#" class="ctn">Explore Restaurants</a>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>18th Main Road, Anna Nagar, Chennai | Phone: 123456789 | Email: contact@foodfinder.in</p>
+            <p>Copyright © 2023 Food Finder</p>
+        </section>
+
+        <script>
+            const menubtn = document.querySelector('.menu-btn')
+            const  navlink = document.querySelector('.nav-link')
+
+            menubtn.addEventListener('click',()=>{
+                navlink.classList.toggle('mobile-menu')
+            })
+        </script>       
+    </body>
+</html>
